@@ -1,0 +1,403 @@
+.home {
+  padding-top: 0;
+}
+
+.hero-home {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+}
+
+.flag-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+  filter: blur(2px);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(196, 30, 58, 0.1) 0%, 
+    rgba(255, 255, 255, 0.9) 50%,
+    rgba(30, 58, 138, 0.1) 100%
+  );
+  z-index: -1;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  color: var(--text-dark);
+}
+
+.highlight {
+  position: relative;
+  color: var(--tunisia-red);
+}
+
+.highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(135deg, var(--tunisia-red), var(--tunisia-sunset));
+  border-radius: 2px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
+
+.hero-quick-stats {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  border: 1px solid rgba(196, 30, 58, 0.1);
+}
+
+.stat-icon {
+  font-size: 1.1rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.zitouna-container {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.zitouna-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.zitouna-container:hover .zitouna-image {
+  transform: scale(1.02);
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 15px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.image-caption h4 {
+  color: var(--tunisia-red);
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.image-caption p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.quick-navigation {
+  background: linear-gradient(180deg, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(244, 228, 188, 0.2) 100%
+  );
+  padding: 60px 0;
+}
+
+.nav-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.nav-card {
+  display: block;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(196, 30, 58, 0.05);
+}
+
+.nav-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(135deg, var(--tunisia-red), var(--tunisia-sunset));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  text-decoration: none;
+}
+
+.nav-card:hover::before {
+  opacity: 1;
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.destinations-icon {
+  background: linear-gradient(135deg, var(--tunisia-blue), #4F46E5);
+}
+
+.experiences-icon {
+  background: linear-gradient(135deg, var(--tunisia-red), var(--tunisia-sunset));
+}
+
+.blog-icon {
+  background: linear-gradient(135deg, var(--tunisia-gold), #F59E0B);
+}
+
+.info-icon {
+  background: linear-gradient(135deg, var(--tunisia-olive), #059669);
+}
+
+.nav-card h3 {
+  color: var(--text-dark);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.nav-card p {
+  color: var(--text-light);
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.card-arrow {
+  color: var(--tunisia-red);
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.nav-card:hover .card-arrow {
+  transform: translateX(5px);
+}
+
+.quick-preview {
+  padding: 60px 0;
+  background: white;
+}
+
+.preview-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.preview-left h3 {
+  color: var(--tunisia-blue);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.preview-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  margin-top: 2px;
+}
+
+.feature-item h4 {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.feature-item p {
+  color: var(--text-light);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, 
+    rgba(196, 30, 58, 0.05), 
+    rgba(30, 58, 138, 0.05)
+  );
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(196, 30, 58, 0.1);
+}
+
+.cta-box h4 {
+  color: var(--tunisia-red);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.cta-box p {
+  color: var(--text-light);
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+    padding-top: 60px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero-quick-stats {
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .stat-item {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .zitouna-image {
+    height: 300px;
+  }
+  
+  .nav-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .nav-card {
+    padding: 25px;
+  }
+  
+  .card-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .preview-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .preview-left h3 {
+    font-size: 1.6rem;
+  }
+  
+  .cta-box {
+    padding: 30px 25px;
+  }
+  
+  .cta-box h4 {
+    font-size: 1.3rem;
+  }
+}

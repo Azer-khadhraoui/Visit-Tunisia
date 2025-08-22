@@ -1,27 +1,28 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <header className="header">
       <div className="container">
         <div className="nav-brand">
-          <div className="logo">
+          <Link to="/" className="logo">
             <span className="logo-icon">🇹🇳</span>
             <span className="logo-text">Visit Tunisia</span>
-          </div>
+          </Link>
         </div>
         
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <ul className="nav-links">
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#destinations">Destinations</a></li>
-            <li><a href="#culture">Culture</a></li>
-            <li><a href="#gastronomie">Gastronomie</a></li>
-            <li><a href="#hebergement">Hébergement</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}>Accueil</Link></li>
+            <li><Link to="/destinations" className={location.pathname === '/destinations' ? 'active' : ''}>Destinations</Link></li>
+            <li><Link to="/experiences" className={location.pathname === '/experiences' ? 'active' : ''}>Expériences</Link></li>
+            <li><Link to="/blog" className={location.pathname === '/blog' ? 'active' : ''}>Blog</Link></li>
+            <li><Link to="/infos-pratiques" className={location.pathname === '/infos-pratiques' ? 'active' : ''}>Infos Pratiques</Link></li>
           </ul>
         </nav>
         

@@ -1,0 +1,312 @@
+.useful-info {
+  background: linear-gradient(180deg, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(244, 228, 188, 0.1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.info-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(196, 30, 58, 0.1);
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  border-color: var(--tunisia-red);
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--tunisia-red), var(--tunisia-sunset));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+}
+
+.info-header h3 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.info-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-content li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.info-bullet {
+  color: var(--tunisia-red);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.emergency-info {
+  background: linear-gradient(135deg, 
+    rgba(196, 30, 58, 0.05), 
+    rgba(255, 107, 53, 0.05)
+  );
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 60px;
+  border: 1px solid rgba(196, 30, 58, 0.1);
+}
+
+.emergency-info h3 {
+  text-align: center;
+  color: var(--tunisia-red);
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.emergency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.emergency-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.emergency-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.emergency-icon {
+  font-size: 2rem;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.emergency-card h4 {
+  color: var(--text-dark);
+  font-size: 1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.emergency-card p {
+  color: var(--tunisia-red);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.travel-tips {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid rgba(30, 58, 138, 0.1);
+}
+
+.tips-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.tips-left h3 {
+  color: var(--tunisia-blue);
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.tip-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tip-icon {
+  font-size: 1.5rem;
+  margin-top: 2px;
+}
+
+.tip-item h4 {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.tip-item p {
+  color: var(--text-light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.download-guides {
+  background: linear-gradient(135deg, 
+    rgba(30, 58, 138, 0.05), 
+    rgba(196, 30, 58, 0.05)
+  );
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(30, 58, 138, 0.1);
+}
+
+.download-guides h4 {
+  color: var(--tunisia-blue);
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.download-guides p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.guide-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guide-btn {
+  padding: 12px 20px;
+  background: white;
+  border: 2px solid var(--tunisia-red);
+  color: var(--tunisia-red);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.guide-btn:hover {
+  background: var(--tunisia-red);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(196, 30, 58, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .tips-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .emergency-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .info-card {
+    padding: 20px;
+  }
+  
+  .info-header {
+    gap: 12px;
+  }
+  
+  .info-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+  
+  .info-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .emergency-info {
+    padding: 30px 25px;
+  }
+  
+  .emergency-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .emergency-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .emergency-card {
+    padding: 15px;
+  }
+  
+  .emergency-icon {
+    font-size: 1.5rem;
+  }
+  
+  .travel-tips {
+    padding: 30px 25px;
+  }
+  
+  .tips-left h3 {
+    font-size: 1.5rem;
+  }
+  
+  .tip-item {
+    gap: 12px;
+  }
+  
+  .tip-icon {
+    font-size: 1.3rem;
+  }
+  
+  .download-guides {
+    padding: 25px 20px;
+  }
+  
+  .download-guides h4 {
+    font-size: 1.2rem;
+  }
+}
