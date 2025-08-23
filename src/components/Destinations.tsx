@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Destinations.css';
 import flagImage from '../assets/Flag.png';
 import kairouanImage from '../assets/okba.jpg';
@@ -8,6 +9,8 @@ import tunisImage from '../assets/tunis.webp';
 import djerbaImage from '../assets/djerba.jpg';
 import saharaImage from '../assets/sahara.jpg';
 import hammametImage from '../assets/hammamet.jpeg';
+// @ts-ignore
+import bizerteImage from '../assets/vieuportbizerte.webp';
 
 interface DestinationsProps {
   showHeader?: boolean;
@@ -77,6 +80,15 @@ const Destinations: React.FC<DestinationsProps> = ({ showHeader = true }) => {
       icon: "🌊",
       color: "var(--tunisia-gold)",
       image: hammametImage
+    },
+    {
+      id: 8,
+      name: "Bizerte",
+      description: "Perle du nord entre lac et méditerranée",
+      highlights: ["Vieux port", "Corniche pittoresque", "Fort d'Espagne", "Lac de Bizerte"],
+      icon: "⚓",
+      color: "var(--tunisia-blue)",
+      image: bizerteImage
     }
   ];
 
@@ -139,10 +151,52 @@ const Destinations: React.FC<DestinationsProps> = ({ showHeader = true }) => {
               </div>
               
               <div className="card-footer">
-                <button className="btn-explore">
-                  Explorer
-                  <span className="arrow">→</span>
-                </button>
+                {destination.name === "Kairouan" ? (
+                  <Link to="/destinations/kairouan" className="btn-explore">
+                    Explorer
+                    <span className="arrow">→</span>
+                  </Link>
+                ) : destination.name === "Hammamet" ? (
+                  <Link to="/destinations/hammamet" className="btn-explore">
+                    Explorer
+                    <span className="arrow">→</span>
+                  </Link>
+                ) : destination.name === "Tabarka" ? (
+                  <Link to="/destinations/tabarka" className="btn-explore">
+                    Explorer
+                    <span className="arrow">→</span>
+                  </Link>
+                ) : destination.name === "Djerba" ? (
+                  <Link to="/destinations/djerba" className="btn-explore">
+                    Explorer
+                    <span className="arrow">→</span>
+                  </Link>
+                ) : destination.name === "Sahara" ? (
+                  <Link to="/destinations/sahara" className="btn-explore">
+                    Explorer
+                    <span className="arrow">→</span>
+                  </Link>
+                ) : destination.name === "Sousse" ? (
+                  <Link to="/destinations/sousse" className="btn-explore">
+                    Explorer
+                    <span className="arrow">→</span>
+                  </Link>
+                ) : destination.name === "Tunis & Carthage" ? (
+                  <Link to="/destinations/tunis" className="btn-explore">
+                    Explorer
+                    <span className="arrow">→</span>
+                  </Link>
+                ) : destination.name === "Bizerte" ? (
+                  <Link to="/destinations/bizerte" className="btn-explore">
+                    Explorer
+                    <span className="arrow">→</span>
+                  </Link>
+                ) : (
+                  <button className="btn-explore">
+                    Explorer
+                    <span className="arrow">→</span>
+                  </button>
+                )}
               </div>
             </div>
           ))}
