@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Home.css';
 import flagImage from '../assets/Flag.png';
 import zitounaImage from '../assets/zitouna.jfif';
+import tunisiaVideo from '../assets/Lets Discover Tunisia  🇹🇳.mp4';
 
 const Home: React.FC = () => {
   return (
@@ -10,7 +11,15 @@ const Home: React.FC = () => {
       {/* Hero Section Simplifiée */}
       <section className="hero-home" id="accueil">
         <div className="hero-background">
-          <img src={flagImage} alt="Drapeau Tunisien" className="flag-bg" />
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            className="video-bg"
+            src={tunisiaVideo}
+          >
+            Votre navigateur ne supporte pas les vidéos HTML5.
+          </video>
           <div className="hero-overlay"></div>
         </div>
         
@@ -18,7 +27,7 @@ const Home: React.FC = () => {
           <div className="hero-content">
             <div className="hero-text fade-in-up">
               <h1>
-                Bienvenue en <span className="highlight">Tunisie</span>
+                Bienvenue en <span className="highlight">la Tunisie</span>
               </h1>
               <p className="hero-subtitle">
                 Découvrez la perle de la Méditerranée, où l'histoire millénaire rencontre 

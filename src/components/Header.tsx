@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
+import flagImage from '../assets/Flag.png';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="nav-brand">
           <Link to="/" className="logo">
-            <span className="logo-icon">🇹🇳</span>
+            <img src={flagImage} alt="Drapeau Tunisien" className="logo-flag" />
             <span className="logo-text">Visit Tunisia</span>
           </Link>
         </div>

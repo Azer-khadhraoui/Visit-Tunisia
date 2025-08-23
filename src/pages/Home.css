@@ -19,12 +19,12 @@
   z-index: -2;
 }
 
-.flag-bg {
+.flag-bg, .video-bg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.15;
-  filter: blur(2px);
+  opacity: 0.3;
+  filter: blur(1px);
 }
 
 .hero-overlay {
@@ -34,9 +34,9 @@
   right: 0;
   bottom: 0;
   background: linear-gradient(135deg, 
-    rgba(196, 30, 58, 0.1) 0%, 
-    rgba(255, 255, 255, 0.9) 50%,
-    rgba(30, 58, 138, 0.1) 100%
+    rgba(196, 30, 58, 0.2) 0%, 
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(30, 58, 138, 0.2) 100%
   );
   z-index: -1;
 }
@@ -56,22 +56,31 @@
   line-height: 1.1;
   margin-bottom: 25px;
   color: var(--text-dark);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .highlight {
   position: relative;
-  color: var(--tunisia-red);
+  color: #C41E3A;
+  font-weight: 800;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(135deg, #C41E3A, #FF6B35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
 }
 
 .highlight::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   right: 0;
-  height: 3px;
-  background: linear-gradient(135deg, var(--tunisia-red), var(--tunisia-sunset));
+  height: 4px;
+  background: linear-gradient(135deg, #C41E3A, #FF6B35);
   border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(196, 30, 58, 0.4);
 }
 
 .hero-subtitle {
