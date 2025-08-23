@@ -1,12 +1,76 @@
 .destinations {
-  background: linear-gradient(180deg, 
-    rgba(244, 228, 188, 0.3) 0%, 
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: rgba(255, 255, 255, 1);
 }
 
 .section-header {
   margin-bottom: 60px;
+}
+
+.destinations-title-container {
+  position: relative;
+  padding: 60px 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background: white;
+  border: 3px solid #C41E3A;
+  box-shadow: 0 15px 35px rgba(196, 30, 58, 0.15);
+}
+
+.destinations-title-container::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 60px;
+  height: 40px;
+  background-image: url('../assets/Flag.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.destinations-title-container::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 60px;
+  height: 40px;
+  background-image: url('../assets/Flag.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.title-flag-bg {
+  display: none;
+}
+
+.title-overlay {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.title-overlay h2 {
+  color: #C41E3A;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.title-overlay p {
+  color: #666;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .section-header h2 {
@@ -22,19 +86,87 @@
 
 .destinations-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
   margin-bottom: 80px;
+}
+
+/* Centrer la 7ème carte (Hammamet) */
+.destination-card:nth-child(7) {
+  grid-column: 1 / -1;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .destination-card:nth-child(7) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .destinations-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .destination-card:nth-child(7) {
+    grid-column: 2 / 3;
+  }
 }
 
 .destination-card {
   background: white;
   border-radius: 20px;
-  padding: 30px;
+  overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
   position: relative;
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
   overflow: hidden;
+}
+
+.destination-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.destination-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .destination-card::before {
@@ -58,11 +190,27 @@
   opacity: 1;
 }
 
+.destination-card:hover .destination-img {
+  transform: scale(1.05);
+}
+
 .card-header {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 25px;
+  padding: 25px 30px 15px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.card-content {
+  padding: 0 30px 20px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
 }
 
 .destination-icon {

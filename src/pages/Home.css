@@ -242,7 +242,33 @@
 }
 
 .info-icon {
-  background: linear-gradient(135deg, var(--tunisia-olive), #059669);
+  background: linear-gradient(135deg, 
+    #C41E3A 0%, 
+    #C41E3A 33%, 
+    white 33%, 
+    white 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.info-icon::before {
+  content: '🌙';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 0.8rem;
+  z-index: 2;
+}
+
+.info-icon::after {
+  content: '⭐';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 0.6rem;
+  z-index: 2;
+  color: white;
 }
 
 .nav-card h3 {
