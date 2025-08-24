@@ -1,0 +1,571 @@
+.culture-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.culture-hero {
+  background: linear-gradient(135deg, var(--tunisia-red) 0%, var(--tunisia-gold) 100%);
+  padding: 120px 0 80px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.culture-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/okba 2.jpg') center/cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, white, var(--tunisia-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.hero-stats .stat {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.hero-stats .number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--tunisia-gold);
+  margin-bottom: 5px;
+}
+
+.hero-stats .label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: rotate(3deg);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover img {
+  transform: rotate(0deg) scale(1.02);
+}
+
+/* Sites Culturels */
+.cultural-sites {
+  background: white;
+}
+
+.cultural-sites h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: var(--tunisia-red);
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.cultural-sites h2::after {
+  content: '🕌';
+  display: block;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.sites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.site-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.site-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.site-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.site-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.site-card:hover .site-image img {
+  transform: scale(1.1);
+}
+
+.unesco-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: var(--tunisia-gold);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.period-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  backdrop-filter: blur(10px);
+}
+
+.site-content {
+  padding: 30px;
+}
+
+.site-header {
+  margin-bottom: 15px;
+}
+
+.site-header h3 {
+  font-size: 1.5rem;
+  color: var(--tunisia-red);
+  margin-bottom: 5px;
+}
+
+.location {
+  color: var(--tunisia-gold);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.site-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.site-highlights h4 {
+  color: var(--tunisia-red);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.site-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.site-highlights li {
+  color: #666;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.btn-explore {
+  background: linear-gradient(45deg, var(--tunisia-red), var(--tunisia-gold));
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-explore:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(194, 54, 54, 0.3);
+}
+
+.btn-explore .arrow {
+  transition: transform 0.3s ease;
+}
+
+.btn-explore:hover .arrow {
+  transform: translateX(5px);
+}
+
+/* Traditions Culturelles */
+.cultural-traditions {
+  background: #f8f9fa;
+}
+
+.cultural-traditions h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: var(--tunisia-red);
+  margin-bottom: 60px;
+}
+
+.traditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tradition-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tradition-card:hover {
+  transform: translateY(-5px);
+}
+
+.tradition-card h3 {
+  color: var(--tunisia-red);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.tradition-card p {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.tradition-activities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.activity-tag {
+  background: linear-gradient(45deg, var(--tunisia-gold), var(--tunisia-sunset));
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Packages Culturels */
+.cultural-packages {
+  background: white;
+}
+
+.cultural-packages h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: var(--tunisia-red);
+  margin-bottom: 60px;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.package-card {
+  background: white;
+  border: 2px solid #f0f0f0;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.package-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(194, 54, 54, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.package-card:hover::before {
+  left: 100%;
+}
+
+.package-card:hover {
+  border-color: var(--tunisia-red);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(194, 54, 54, 0.15);
+}
+
+.package-header {
+  margin-bottom: 20px;
+}
+
+.package-header h3 {
+  color: var(--tunisia-red);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.package-duration {
+  background: var(--tunisia-gold);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.package-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--tunisia-red);
+  margin: 20px 0;
+}
+
+.package-description {
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.package-includes h4 {
+  color: var(--tunisia-red);
+  margin-bottom: 15px;
+}
+
+.package-includes ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.package-includes li {
+  color: #666;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.package-includes li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--tunisia-green);
+  font-weight: bold;
+}
+
+/* Conseils Pratiques */
+.culture-tips {
+  background: #f8f9fa;
+}
+
+.culture-tips h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: var(--tunisia-red);
+  margin-bottom: 60px;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.tip-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+}
+
+.tip-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.tip-card h3 {
+  color: var(--tunisia-red);
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.tip-card p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Call to Action */
+.culture-cta {
+  background: linear-gradient(135deg, var(--tunisia-red) 0%, var(--tunisia-gold) 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .sites-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .site-card {
+    margin: 0 10px;
+  }
+  
+  .traditions-grid,
+  .packages-grid,
+  .tips-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-buttons .btn {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+  
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .site-content,
+  .tradition-card,
+  .package-card,
+  .tip-card {
+    padding: 20px;
+  }
+}

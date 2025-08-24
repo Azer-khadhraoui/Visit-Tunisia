@@ -1,0 +1,520 @@
+.wellness-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.wellness-hero {
+  height: 60vh;
+  background: linear-gradient(135deg, rgba(139, 193, 178, 0.9), rgba(72, 187, 230, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.wellness-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/Spa de luxe.jpg') center/cover;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.hero-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-highlights .highlight {
+  text-align: center;
+}
+
+.hero-highlights .number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-highlights .label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Wellness Experiences Section */
+.wellness-experiences {
+  background: linear-gradient(180deg, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(139, 193, 178, 0.1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.wellness-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.wellness-card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(139, 193, 178, 0.2);
+}
+
+.wellness-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.wellness-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.wellness-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.wellness-card:hover .wellness-image img {
+  transform: scale(1.05);
+}
+
+.wellness-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.location-tag {
+  background: rgba(139, 193, 178, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.wellness-content {
+  padding: 35px;
+}
+
+.wellness-content h3 {
+  font-size: 1.7rem;
+  color: rgba(139, 193, 178, 1);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.wellness-content p {
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.wellness-details {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: rgba(139, 193, 178, 0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(139, 193, 178, 0.2);
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: rgba(139, 193, 178, 1);
+}
+
+.detail-value {
+  color: var(--text-secondary);
+}
+
+.wellness-treatments h4 {
+  color: rgba(139, 193, 178, 1);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.treatments-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.treatment-tag {
+  background: rgba(139, 193, 178, 0.2);
+  color: rgba(139, 193, 178, 1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(139, 193, 178, 0.3);
+}
+
+/* Wellness Traditions Section */
+.wellness-traditions {
+  background: linear-gradient(135deg, rgba(139, 193, 178, 0.95), rgba(72, 187, 230, 0.9));
+  color: white;
+  padding: 100px 0;
+  position: relative;
+}
+
+.wellness-traditions::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/Centre de thalasso.jpg') center/cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.traditions-content {
+  position: relative;
+  z-index: 2;
+}
+
+.traditions-content h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.traditions-content > p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.traditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.tradition-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-dark);
+  padding: 40px 30px;
+  border-radius: 25px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.tradition-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.tradition-icon {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+}
+
+.tradition-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: rgba(139, 193, 178, 1);
+}
+
+.tradition-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Wellness Packages Section */
+.wellness-packages {
+  background: rgba(139, 193, 178, 0.05);
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.package-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(139, 193, 178, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.package-card h4 {
+  font-size: 1.4rem;
+  color: rgba(139, 193, 178, 1);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.package-card p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.package-duration {
+  background: rgba(139, 193, 178, 0.1);
+  color: rgba(139, 193, 178, 1);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.package-includes {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.package-includes li {
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.package-includes li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(139, 193, 178, 1);
+  font-weight: bold;
+}
+
+.package-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(139, 193, 178, 1);
+  margin-bottom: 25px;
+}
+
+.btn-book-wellness {
+  background: linear-gradient(135deg, rgba(139, 193, 178, 1), rgba(72, 187, 230, 1));
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-book-wellness:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(139, 193, 178, 0.4);
+}
+
+/* Wellness Tips Section */
+.wellness-tips {
+  background: linear-gradient(135deg, rgba(139, 193, 178, 0.9), rgba(72, 187, 230, 0.8));
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.wellness-tips::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/Hammam traditionnel.jpg') center/cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.tips-content {
+  position: relative;
+  z-index: 2;
+}
+
+.tips-content h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 60px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.tip-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-dark);
+  padding: 35px 25px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.tip-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.tip-icon {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+}
+
+.tip-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: rgba(139, 193, 178, 1);
+}
+
+.tip-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-highlights {
+    gap: 30px;
+  }
+  
+  .hero-highlights .number {
+    font-size: 2rem;
+  }
+  
+  .wellness-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .wellness-content {
+    padding: 25px;
+  }
+  
+  .traditions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .wellness-content {
+    padding: 20px;
+  }
+  
+  .wellness-content h3 {
+    font-size: 1.4rem;
+  }
+  
+  .traditions-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .tips-content h2 {
+    font-size: 2.2rem;
+  }
+}

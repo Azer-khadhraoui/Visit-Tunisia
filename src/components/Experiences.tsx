@@ -12,6 +12,12 @@ const Experiences: React.FC = () => {
       navigate('/experiences/gastronomie');
     } else if (categoryId === 'desert') {
       navigate('/experiences/nature-decouverte');
+    } else if (categoryId === 'wellness') {
+      navigate('/experiences/bien-etre');
+    } else if (categoryId === 'sports') {
+      navigate('/experiences/sports-loisirs');
+    } else if (categoryId === 'culture') {
+      navigate('/experiences/medinas-patrimoine');
     }
     // Ici on peut ajouter d'autres navigations pour les autres catégories
   };

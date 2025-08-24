@@ -1,0 +1,573 @@
+.sports-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.sports-hero {
+  height: 60vh;
+  background: linear-gradient(135deg, rgba(19, 117, 183, 0.9), rgba(67, 160, 71, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.sports-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/Terrain de golf.jpeg') center/cover;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.hero-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-highlights .highlight {
+  text-align: center;
+}
+
+.hero-highlights .number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-highlights .label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Sports Experiences Section */
+.sports-experiences {
+  background: linear-gradient(180deg, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(19, 117, 183, 0.05) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.sport-card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(19, 117, 183, 0.1);
+}
+
+.sport-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.sport-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.sport-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sport-card:hover .sport-image img {
+  transform: scale(1.05);
+}
+
+.sport-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.location-tag {
+  background: rgba(19, 117, 183, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.sport-content {
+  padding: 35px;
+}
+
+.sport-content h3 {
+  font-size: 1.7rem;
+  color: var(--tunisia-blue);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.sport-content p {
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.sport-details {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: rgba(19, 117, 183, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(19, 117, 183, 0.1);
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--tunisia-blue);
+}
+
+.detail-value {
+  color: var(--text-secondary);
+}
+
+.sport-activities h4 {
+  color: var(--tunisia-blue);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.activity-tag {
+  background: rgba(19, 117, 183, 0.1);
+  color: var(--tunisia-blue);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(19, 117, 183, 0.2);
+}
+
+/* Sports Categories Section */
+.sports-categories {
+  background: linear-gradient(135deg, rgba(19, 117, 183, 0.95), rgba(67, 160, 71, 0.9));
+  color: white;
+  padding: 100px 0;
+  position: relative;
+}
+
+.sports-categories::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/Kitesurf.jpg') center/cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.categories-content {
+  position: relative;
+  z-index: 2;
+}
+
+.categories-content h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.categories-content > p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.category-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-dark);
+  padding: 40px 30px;
+  border-radius: 25px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.category-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.category-icon {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+}
+
+.category-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--tunisia-blue);
+}
+
+.category-card p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.category-activities {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.category-activities li {
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.category-activities li::before {
+  content: '⚡';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--tunisia-blue);
+}
+
+/* Sports Packages Section */
+.sports-packages {
+  background: rgba(19, 117, 183, 0.03);
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.package-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(19, 117, 183, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.package-level {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--tunisia-blue);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.package-card h4 {
+  font-size: 1.4rem;
+  color: var(--tunisia-blue);
+  margin: 20px 0 15px;
+  font-weight: 700;
+}
+
+.package-card p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.package-duration {
+  background: rgba(19, 117, 183, 0.1);
+  color: var(--tunisia-blue);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+
+.package-includes {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.package-includes li {
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.package-includes li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--tunisia-blue);
+  font-weight: bold;
+}
+
+.package-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--tunisia-blue);
+  margin-bottom: 25px;
+}
+
+.btn-book-sports {
+  background: linear-gradient(135deg, var(--tunisia-blue), rgba(67, 160, 71, 1));
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-book-sports:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(19, 117, 183, 0.4);
+}
+
+/* Sports Events Section */
+.sports-events {
+  background: linear-gradient(135deg, rgba(67, 160, 71, 0.9), var(--tunisia-blue));
+  color: white;
+  padding: 100px 0;
+  position: relative;
+}
+
+.sports-events::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/Plongée sous-marine.jpg') center/cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.events-content {
+  position: relative;
+  z-index: 2;
+}
+
+.events-content h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.events-content > p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-dark);
+  padding: 35px 25px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.event-date {
+  background: var(--tunisia-blue);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.event-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--tunisia-blue);
+}
+
+.event-location {
+  color: rgba(67, 160, 71, 1);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.event-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-highlights {
+    gap: 30px;
+  }
+  
+  .hero-highlights .number {
+    font-size: 2rem;
+  }
+  
+  .sports-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .sport-content {
+    padding: 25px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .sport-content {
+    padding: 20px;
+  }
+  
+  .sport-content h3 {
+    font-size: 1.4rem;
+  }
+  
+  .categories-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .events-content h2 {
+    font-size: 2.2rem;
+  }
+}
