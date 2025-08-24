@@ -169,22 +169,25 @@ const SportsPage: React.FC = () => {
       <section className="sports-hero">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>⛳ Sports & Loisirs</h1>
-            <p>Terrain de jeu exceptionnel pour tous les sports</p>
-            <div className="hero-highlights">
-              <div className="highlight">
+            <h1>Sports & Loisirs</h1>
+            <p>Terrain de jeu exceptionnel pour tous les sports, du golf aux sports nautiques en passant par l'aventure désertique</p>
+            <div className="hero-stats">
+              <div className="stat">
                 <span className="number">10</span>
                 <span className="label">parcours de golf</span>
               </div>
-              <div className="highlight">
+              <div className="stat">
                 <span className="number">1300</span>
                 <span className="label">km de côtes</span>
               </div>
-              <div className="highlight">
+              <div className="stat">
                 <span className="number">50+</span>
                 <span className="label">activités sportives</span>
               </div>
             </div>
+          </div>
+          <div className="hero-image">
+            <img src={terrainGolf} alt="Parcours de golf en Tunisie" />
           </div>
         </div>
       </section>

@@ -108,22 +108,25 @@ const GastronomyPage: React.FC = () => {
       <section className="gastronomy-hero">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>🍲 Art de Vivre & Gastronomie</h1>
-            <p>Découvrez les saveurs authentiques de la cuisine tunisienne</p>
-            <div className="hero-highlights">
-              <div className="highlight">
+            <h1>Art de Vivre & Gastronomie</h1>
+            <p>Découvrez les saveurs authentiques de la cuisine tunisienne, héritage de 3000 ans de tradition culinaire méditerranéenne</p>
+            <div className="hero-stats">
+              <div className="stat">
                 <span className="number">3000</span>
                 <span className="label">ans de tradition</span>
               </div>
-              <div className="highlight">
+              <div className="stat">
                 <span className="number">100+</span>
                 <span className="label">plats typiques</span>
               </div>
-              <div className="highlight">
+              <div className="stat">
                 <span className="number">15</span>
                 <span className="label">épices essentielles</span>
               </div>
             </div>
+          </div>
+          <div className="hero-image">
+            <img src={couscousImage} alt="Couscous traditionnel tunisien" />
           </div>
         </div>
       </section>

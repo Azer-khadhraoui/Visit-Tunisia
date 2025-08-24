@@ -100,7 +100,7 @@ const Experiences: React.FC = () => {
       subtitle: 'Activités sportives et de loisirs',
       description: 'Golf, plongée et sports nautiques',
       icon: '⛳',
-      color: 'var(--tunisia-blue)',
+      color: '#1976d2',
       experiences: [
         'Golf face à la mer',
         'Plongée sous-marine',

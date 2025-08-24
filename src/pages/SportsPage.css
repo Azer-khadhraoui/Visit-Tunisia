@@ -4,11 +4,9 @@
 
 /* Hero Section */
 .sports-hero {
-  height: 60vh;
-  background: linear-gradient(135deg, rgba(19, 117, 183, 0.9), rgba(67, 160, 71, 0.8));
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(135deg, #1976d2 0%, #43a047 100%);
+  padding: 120px 0 80px;
+  color: white;
   position: relative;
   overflow: hidden;
 }
@@ -21,49 +19,90 @@
   right: 0;
   bottom: 0;
   background: url('../assets/Terrain de golf.jpeg') center/cover;
-  opacity: 0.2;
+  opacity: 0.1;
   z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  text-align: center;
-  color: white;
-  max-width: 800px;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
 }
 
-.hero-content h1 {
+.hero-text h1 {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, white, #4caf50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.hero-content p {
+.hero-text p {
   font-size: 1.3rem;
   margin-bottom: 40px;
   opacity: 0.95;
+  line-height: 1.6;
 }
 
-.hero-highlights {
+.hero-image {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
-.hero-highlights .highlight {
+.hero-image img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: rotate(-3deg);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.hero-stats .stat {
   text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.hero-highlights .number {
+.hero-stats .stat .number {
   display: block;
   font-size: 2.5rem;
   font-weight: 700;
-  color: white;
+  color: #4caf50;
 }
+
+.hero-stats .stat .label {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+/* Sports Experiences Section */
 
 .hero-highlights .label {
   font-size: 1rem;

@@ -7,6 +7,7 @@ import hammamTraditionnel from '../assets/Hammam traditionnel.jpg';
 import sourcesKorbous from '../assets/Sources thermales de Korbous.jpg';
 import spaLuxe from '../assets/Spa de luxe.jpg';
 import hammametPlage from '../assets/hammametplage.webp';
+import hammamTraditional from '../assets/Hammam traditionnel.jpg';
 import marinaHammamet from '../assets/marina hammamet.jpg';
 
 const WellnessPage: React.FC = () => {
@@ -134,22 +135,25 @@ const WellnessPage: React.FC = () => {
       <section className="wellness-hero">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>🧘‍♀️ Bien-être & Détente</h1>
-            <p>Reconnectez-vous avec votre harmonie intérieure en Tunisie</p>
-            <div className="hero-highlights">
-              <div className="highlight">
+            <h1>Bien-être & Détente</h1>
+            <p>Reconnectez-vous avec votre harmonie intérieure dans les plus beaux spas et centres thermaux de Tunisie</p>
+            <div className="hero-stats">
+              <div className="stat">
                 <span className="number">50+</span>
                 <span className="label">centres wellness</span>
               </div>
-              <div className="highlight">
+              <div className="stat">
                 <span className="number">2000</span>
                 <span className="label">ans de thermalisme</span>
               </div>
-              <div className="highlight">
+              <div className="stat">
                 <span className="number">300</span>
                 <span className="label">jours de soleil</span>
               </div>
             </div>
+          </div>
+          <div className="hero-image">
+            <img src={hammamTraditional} alt="Hammam traditionnel" />
           </div>
         </div>
       </section>
