@@ -106,8 +106,8 @@ const BeachesPage: React.FC = () => {
       <section className="beaches-hero">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>🏖️ Plages & Côtes de Tunisie</h1>
-            <p>Découvrez 1 300 km de côtes méditerranéennes aux eaux turquoise</p>
+            <h1>Plages & Côtes</h1>
+            <p>Découvrez 1 300 km de côtes méditerranéennes aux eaux turquoise et plages paradisiaques</p>
             <div className="hero-stats">
               <div className="stat">
                 <span className="number">1300</span>
@@ -123,8 +123,10 @@ const BeachesPage: React.FC = () => {
               </div>
             </div>
           </div>
+          <div className="hero-image">
+            <img src={hammametPlage} alt="Plage de Hammamet" />
+          </div>
         </div>
-        <div className="hero-background"></div>
       </section>
 
       {/* Destinations Section */}

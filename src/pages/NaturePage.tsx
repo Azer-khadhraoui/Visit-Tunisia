@@ -153,8 +153,8 @@ const NaturePage: React.FC = () => {
       <section className="nature-hero">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>🐪 Nature & Découverte</h1>
-            <p>Aventures dans le patrimoine naturel de la Tunisie</p>
+            <h1>Nature & Découverte</h1>
+            <p>Aventures dans le patrimoine naturel de la Tunisie, du Sahara aux oasis verdoyantes</p>
             <div className="hero-stats">
               <div className="stat">
                 <span className="number">17</span>
@@ -169,6 +169,9 @@ const NaturePage: React.FC = () => {
                 <span className="label">espèces animales</span>
               </div>
             </div>
+          </div>
+          <div className="hero-image">
+            <img src={saharaImage} alt="Désert du Sahara" />
           </div>
         </div>
       </section>
