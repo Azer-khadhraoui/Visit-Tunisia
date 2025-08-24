@@ -8,6 +8,7 @@ import DestinationsPage from './pages/DestinationsPage';
 import ExperiencesPage from './pages/ExperiencesPage';
 import BeachesPage from './pages/BeachesPage';
 import GastronomyPage from './pages/GastronomyPage';
+import NaturePage from './pages/NaturePage';
 import BlogPage from './pages/BlogPage';
 import InfoPage from './pages/InfoPage';
 import KairouanPage from './pages/KairouanPage';
@@ -40,6 +41,7 @@ function App() {
           <Route path="/experiences" element={<ExperiencesPage />} />
           <Route path="/experiences/plages-cotes" element={<BeachesPage />} />
           <Route path="/experiences/gastronomie" element={<GastronomyPage />} />
+          <Route path="/experiences/nature-decouverte" element={<NaturePage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/infos-pratiques" element={<InfoPage />} />
         </Routes>

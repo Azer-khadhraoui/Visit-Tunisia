@@ -10,6 +10,8 @@ const Experiences: React.FC = () => {
       navigate('/experiences/plages-cotes');
     } else if (categoryId === 'gastronomy') {
       navigate('/experiences/gastronomie');
+    } else if (categoryId === 'desert') {
+      navigate('/experiences/nature-decouverte');
     }
     // Ici on peut ajouter d'autres navigations pour les autres catégories
   };
