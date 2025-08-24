@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import DestinationsPage from './pages/DestinationsPage';
 import ExperiencesPage from './pages/ExperiencesPage';
+import BeachesPage from './pages/BeachesPage';
 import BlogPage from './pages/BlogPage';
 import InfoPage from './pages/InfoPage';
 import KairouanPage from './pages/KairouanPage';
@@ -36,6 +37,7 @@ function App() {
           <Route path="/destinations/bizerte" element={<BizertePage />} />
           <Route path="/destinations/mahdia" element={<MahdiaPage />} />
           <Route path="/experiences" element={<ExperiencesPage />} />
+          <Route path="/experiences/plages-cotes" element={<BeachesPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/infos-pratiques" element={<InfoPage />} />
         </Routes>

@@ -1,7 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Experiences.css';
 
 const Experiences: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleCategoryExplore = (categoryId: string) => {
+    if (categoryId === 'beach') {
+      navigate('/experiences/plages-cotes');
+    }
+    // Ici on peut ajouter d'autres navigations pour les autres catégories
+  };
+
   const experienceCategories = [
     {
       id: 'beach',
@@ -15,7 +25,8 @@ const Experiences: React.FC = () => {
         'Côte sauvage du Cap Bon', 
         'Lagunes de Djerba',
         'Thalassothérapie à Sousse'
-      ]
+      ],
+      featured: true
     },
     {
       id: 'culture',
@@ -133,6 +144,7 @@ const Experiences: React.FC = () => {
                 <button 
                   className="btn-discover"
                   style={{ color: category.color, borderColor: category.color }}
+                  onClick={() => handleCategoryExplore(category.id)}
                 >
                   Explorer
                   <span className="arrow">→</span>

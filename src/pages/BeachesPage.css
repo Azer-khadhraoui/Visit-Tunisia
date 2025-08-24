@@ -1,0 +1,382 @@
+.beaches-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.beaches-hero {
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--tunisia-blue), var(--tunisia-sunset));
+  overflow: hidden;
+}
+
+.beaches-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/hammametplage.webp') center/cover;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-stats .stat {
+  text-align: center;
+}
+
+.hero-stats .number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--tunisia-gold);
+}
+
+.hero-stats .label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Destinations Section */
+.beaches-destinations {
+  background: linear-gradient(180deg, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(244, 228, 188, 0.1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.beaches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.beach-destination-card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(19, 117, 183, 0.1);
+}
+
+.beach-destination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.beach-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.beach-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.beach-destination-card:hover .beach-image img {
+  transform: scale(1.05);
+}
+
+.beach-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.location-tag {
+  background: rgba(19, 117, 183, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.beach-content {
+  padding: 40px;
+}
+
+.beach-content h3 {
+  font-size: 1.8rem;
+  color: var(--tunisia-blue);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.beach-content p {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.beach-activities {
+  margin-bottom: 30px;
+}
+
+.beach-activities h4 {
+  color: var(--tunisia-blue);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.activities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.activity-tag {
+  background: rgba(244, 228, 188, 0.4);
+  color: var(--tunisia-blue);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(19, 117, 183, 0.2);
+}
+
+.beach-highlights h4 {
+  color: var(--tunisia-blue);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.beach-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.beach-highlights li {
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.beach-highlights li::before {
+  content: '🏖️';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Tips Section */
+.beach-tips {
+  background: linear-gradient(135deg, rgba(19, 117, 183, 0.95), rgba(244, 120, 53, 0.95));
+  color: white;
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.beach-tips::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/cornichesousse.jpg') center/cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.tips-content {
+  position: relative;
+  z-index: 2;
+}
+
+.tips-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tips-header h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.tips-header p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.tip-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-dark);
+  padding: 40px 30px;
+  border-radius: 25px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.tip-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, var(--tunisia-blue), var(--tunisia-sunset));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.tip-card:hover::before {
+  transform: scaleX(1);
+}
+
+.tip-icon {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+}
+
+.tip-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--tunisia-blue);
+}
+
+.tip-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.tip-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  background: rgba(19, 117, 183, 0.05);
+  border-radius: 15px;
+  border: 1px solid rgba(19, 117, 183, 0.1);
+}
+
+.tip-detail .temperature,
+.tip-detail .highlight {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--tunisia-blue);
+}
+
+.tip-detail .label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-stats {
+    gap: 30px;
+  }
+  
+  .hero-stats .number {
+    font-size: 2rem;
+  }
+  
+  .beaches-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .beach-content {
+    padding: 30px;
+  }
+  
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tip-card {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .beach-content {
+    padding: 25px;
+  }
+  
+  .beach-content h3 {
+    font-size: 1.5rem;
+  }
+}
