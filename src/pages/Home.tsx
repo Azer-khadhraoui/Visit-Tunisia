@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import flagImage from '../assets/Flag.png';
 import zitounaImage from '../assets/zitouna.jfif';
 import tunisiaVideo from '../assets/Lets Discover Tunisia  🇹🇳.mp4';
 

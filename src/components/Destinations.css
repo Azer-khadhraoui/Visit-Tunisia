@@ -86,35 +86,35 @@
 
 .destinations-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   margin-bottom: 80px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Centrer la 7ème carte (Hammamet) */
-.destination-card:nth-child(7) {
-  grid-column: 1 / -1;
-  max-width: 400px;
-  margin: 0 auto;
+@media (max-width: 992px) {
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .destinations-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .destinations-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
-  .destination-card:nth-child(7) {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (min-width: 1200px) {
   .destinations-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .destination-card:nth-child(7) {
-    grid-column: 2 / 3;
   }
 }
 

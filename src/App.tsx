@@ -14,6 +14,7 @@ import TabarkaPage from './pages/TabarkaPage';
 import DjerbaPage from './pages/DjerbaPage';
 import TunisPage from './pages/TunisPage';
 import BizertePage from './pages/BizertePage';
+import MahdiaPage from './pages/MahdiaPage';
 import SaharaPage from './pages/SaharaPage';
 import SoussePage from './pages/SoussePage';
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/destinations/sousse" element={<SoussePage />} />
           <Route path="/destinations/tunis" element={<TunisPage />} />
           <Route path="/destinations/bizerte" element={<BizertePage />} />
+          <Route path="/destinations/mahdia" element={<MahdiaPage />} />
           <Route path="/experiences" element={<ExperiencesPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/infos-pratiques" element={<InfoPage />} />

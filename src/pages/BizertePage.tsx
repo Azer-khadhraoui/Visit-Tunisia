@@ -44,31 +44,30 @@ const BizertePage: React.FC = () => {
     <div className="bizerte-page">
       {/* Hero Section */}
       <section className="bizerte-hero">
-        <div className="hero-image-container">
-          <img src={heroImage} alt="Bizerte - Perle du Nord" className="hero-image" />
-          <div className="hero-overlay">
-            <div className="hero-content">
-              <nav className="breadcrumb">
-                <Link to="/destinations">Destinations</Link>
-                <span className="separator">›</span>
-                <span>Bizerte</span>
-              </nav>
-              <h1>Bizerte</h1>
-              <p>Découvrez la perle du nord tunisien, entre lac paisible et Méditerranée azur, où l'histoire maritime se mêle à la beauté naturelle</p>
-              <div className="hero-stats">
-                <div className="stat">
-                  <span className="stat-number">2500+</span>
-                  <span className="stat-label">ans d'histoire</span>
-                </div>
-                <div className="stat">
-                  <span className="stat-number">1</span>
-                  <span className="stat-label">pont mobile historique</span>
-                </div>
-                <div className="stat">
-                  <span className="stat-number">12</span>
-                  <span className="stat-label">km de côtes</span>
-                </div>
-              </div>
+        <div className="hero-background">
+          <img src={heroImage} alt="Bizerte - Perle du Nord" className="hero-bg-img" />
+        </div>
+        <div className="hero-overlay"></div>
+        <div className="hero-content">
+          <nav className="breadcrumb">
+            <Link to="/destinations">Destinations</Link>
+            <span className="separator">›</span>
+            <span>Bizerte</span>
+          </nav>
+          <h1>Bizerte</h1>
+          <p>Découvrez la perle du nord tunisien, entre lac paisible et Méditerranée azur, où l'histoire maritime se mêle à la beauté naturelle</p>
+          <div className="hero-stats">
+            <div className="stat">
+              <span className="stat-number">2500+</span>
+              <span className="stat-label">ans d'histoire</span>
+            </div>
+            <div className="stat">
+              <span className="stat-number">1</span>
+              <span className="stat-label">pont mobile historique</span>
+            </div>
+            <div className="stat">
+              <span className="stat-number">12</span>
+              <span className="stat-label">km de côtes</span>
             </div>
           </div>
         </div>

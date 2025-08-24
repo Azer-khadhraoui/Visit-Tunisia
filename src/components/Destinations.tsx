@@ -11,6 +11,8 @@ import saharaImage from '../assets/sahara.jpg';
 import hammametImage from '../assets/hammamet.jpeg';
 // @ts-ignore
 import bizerteImage from '../assets/vieuportbizerte.webp';
+// @ts-ignore
+import mahdiaImage from '../assets/plagemahdia.jpg';
 
 interface DestinationsProps {
   showHeader?: boolean;
@@ -38,6 +40,15 @@ const Destinations: React.FC<DestinationsProps> = ({ showHeader = true }) => {
     },
     {
       id: 3,
+      name: "Mahdia",
+      description: "Perle du Sahel et berceau de la dynastie fatimide",
+      highlights: ["Grande Mosquée fatimide", "Borj El Kebir", "Skifa Kahla", "Plages dorées"],
+      icon: "🏛️",
+      color: "var(--tunisia-gold)",
+      image: mahdiaImage
+    },
+    {
+      id: 4,
       name: "Sousse",
       description: "Perle du Sahel aux trésors archéologiques",
       highlights: ["Médina fortifiée", "Ribat de Sousse", "Port de plaisance"],
@@ -46,7 +57,7 @@ const Destinations: React.FC<DestinationsProps> = ({ showHeader = true }) => {
       image: sousseImage
     },
     {
-      id: 4,
+      id: 5,
       name: "Tunis & Carthage",
       description: "Découvrez la capitale et les vestiges de l'antique Carthage",
       highlights: ["Médina de Tunis", "Musée du Bardo", "Sidi Bou Saïd"],
@@ -55,7 +66,7 @@ const Destinations: React.FC<DestinationsProps> = ({ showHeader = true }) => {
       image: tunisImage
     },
     {
-      id: 5,
+      id: 6,
       name: "Djerba",
       description: "L'île paradisiaque aux plages de sable fin",
       highlights: ["Plages dorées", "Synagogue de la Ghriba", "Artisanat local"],
@@ -64,7 +75,7 @@ const Destinations: React.FC<DestinationsProps> = ({ showHeader = true }) => {
       image: djerbaImage
     },
     {
-      id: 6,
+      id: 7,
       name: "Sahara",
       description: "Aventure dans le plus grand désert du monde",
       highlights: ["Dunes de Erg Chebbi", "Oasis de montagne", "Nuits étoilées"],
@@ -73,7 +84,7 @@ const Destinations: React.FC<DestinationsProps> = ({ showHeader = true }) => {
       image: saharaImage
     },
     {
-      id: 7,
+      id: 8,
       name: "Hammamet",
       description: "Station balnéaire réputée et jardins luxuriants",
       highlights: ["Médina historique", "Plages méditerranéennes", "Centres de thalasso"],
@@ -82,7 +93,7 @@ const Destinations: React.FC<DestinationsProps> = ({ showHeader = true }) => {
       image: hammametImage
     },
     {
-      id: 8,
+      id: 9,
       name: "Bizerte",
       description: "Perle du nord entre lac et méditerranée",
       highlights: ["Vieux port", "Corniche pittoresque", "Fort d'Espagne", "Lac de Bizerte"],
@@ -188,6 +199,11 @@ const Destinations: React.FC<DestinationsProps> = ({ showHeader = true }) => {
                   </Link>
                 ) : destination.name === "Bizerte" ? (
                   <Link to="/destinations/bizerte" className="btn-explore">
+                    Explorer
+                    <span className="arrow">→</span>
+                  </Link>
+                ) : destination.name === "Mahdia" ? (
+                  <Link to="/destinations/mahdia" className="btn-explore">
                     Explorer
                     <span className="arrow">→</span>
                   </Link>
