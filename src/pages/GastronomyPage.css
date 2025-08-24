@@ -1,0 +1,405 @@
+.gastronomy-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.gastronomy-hero {
+  height: 60vh;
+  background: linear-gradient(135deg, var(--tunisia-sunset), var(--tunisia-gold));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.gastronomy-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/Plat de couscous traditionnel.jfif') center/cover;
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  opacity: 0.95;
+}
+
+.hero-highlights {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.hero-highlights .highlight {
+  text-align: center;
+}
+
+.hero-highlights .number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-highlights .label {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Traditional Dishes Section */
+.traditional-dishes {
+  background: linear-gradient(180deg, 
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(244, 228, 188, 0.1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.dishes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.dish-card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(244, 120, 53, 0.1);
+}
+
+.dish-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.dish-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.dish-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.dish-card:hover .dish-image img {
+  transform: scale(1.05);
+}
+
+.dish-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.region-tag {
+  background: rgba(244, 120, 53, 0.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+.dish-content {
+  padding: 40px;
+}
+
+.dish-content h3 {
+  font-size: 1.8rem;
+  color: var(--tunisia-sunset);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.dish-content p {
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.dish-details {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: rgba(244, 228, 188, 0.2);
+  border-radius: 15px;
+  border: 1px solid rgba(244, 120, 53, 0.1);
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--tunisia-sunset);
+}
+
+.detail-value {
+  color: var(--text-secondary);
+}
+
+.ingredients h4 {
+  color: var(--tunisia-sunset);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ingredient-tag {
+  background: rgba(244, 228, 188, 0.4);
+  color: var(--tunisia-sunset);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(244, 120, 53, 0.2);
+}
+
+/* Culinary Traditions Section */
+.culinary-traditions {
+  background: linear-gradient(135deg, var(--tunisia-sunset), var(--tunisia-gold));
+  color: white;
+  padding: 100px 0;
+  position: relative;
+}
+
+.culinary-traditions::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../assets/Salade mechouia.jpg') center/cover;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.traditions-content {
+  position: relative;
+  z-index: 2;
+}
+
+.traditions-content h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.traditions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.tradition-card {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-dark);
+  padding: 40px 30px;
+  border-radius: 25px;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.tradition-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+
+.tradition-icon {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+}
+
+.tradition-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: var(--tunisia-sunset);
+}
+
+.tradition-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Cooking Experiences Section */
+.cooking-experiences {
+  background: rgba(244, 228, 188, 0.1);
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.experience-card {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(244, 120, 53, 0.1);
+  text-align: center;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.experience-card h4 {
+  font-size: 1.3rem;
+  color: var(--tunisia-sunset);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.experience-card p {
+  color: var(--text-secondary);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.experience-info {
+  margin-bottom: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: var(--text-secondary);
+}
+
+.info-item .icon {
+  font-size: 1.2rem;
+}
+
+.btn-book {
+  background: linear-gradient(135deg, var(--tunisia-sunset), var(--tunisia-gold));
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-book:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(244, 120, 53, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-highlights {
+    gap: 30px;
+  }
+  
+  .hero-highlights .number {
+    font-size: 2rem;
+  }
+  
+  .dishes-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .dish-content {
+    padding: 30px;
+  }
+  
+  .traditions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tradition-card {
+    padding: 30px 25px;
+  }
+  
+  .experiences-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .dish-content {
+    padding: 25px;
+  }
+  
+  .dish-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .traditions-content h2 {
+    font-size: 2.2rem;
+  }
+}

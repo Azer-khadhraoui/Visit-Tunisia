@@ -8,6 +8,8 @@ const Experiences: React.FC = () => {
   const handleCategoryExplore = (categoryId: string) => {
     if (categoryId === 'beach') {
       navigate('/experiences/plages-cotes');
+    } else if (categoryId === 'gastronomy') {
+      navigate('/experiences/gastronomie');
     }
     // Ici on peut ajouter d'autres navigations pour les autres catégories
   };
@@ -103,11 +105,6 @@ const Experiences: React.FC = () => {
   return (
     <section className="experiences section-padding" id="experiences">
       <div className="container">
-        <div className="section-header text-center">
-          <h2>Expériences Uniques</h2>
-          <p>Découvrez la Tunisie à travers des expériences authentiques et inoubliables</p>
-        </div>
-
         <div className="experiences-grid">
           {experienceCategories.map((category, index) => (
             <div 
