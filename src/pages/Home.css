@@ -5,6 +5,19 @@
   background-image: none !important;
 }
 
+/* Force suppression de toute image sur la page d'accueil */
+.home *,
+.home::before,
+.home::after,
+.hero-home *,
+.hero-home::before,
+.hero-home::after,
+.hero-background *,
+.hero-background::before,
+.hero-background::after {
+  background-image: none !important;
+}
+
 .hero-home {
   min-height: 90vh;
   display: flex;
