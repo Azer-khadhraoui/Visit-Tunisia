@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
-import zitounaImage from '../assets/zitouna.jfif';
+import flagImage from '../assets/Flag.png';
+import tunisiaImage from '../assets/tunis.webp';
 import tunisiaVideo from '../assets/Lets Discover Tunisia  🇹🇳.mp4';
 
 const Home: React.FC = () => {
@@ -25,49 +26,33 @@ const Home: React.FC = () => {
         <div className="container">
           <div className="hero-content">
             <div className="hero-text fade-in-up">
+              <div className="welcome-line">
+                <img src={flagImage} alt="Drapeau Tunisien" className="tunisia-flag" />
+                <span className="welcome-text">Bienvenue en Tunisie</span>
+              </div>
               <h1>
-                Bienvenue en <span className="highlight">la Tunisie</span>
+                Découvrez la <span className="highlight">Perle de la Méditerranée</span>
               </h1>
               <p className="hero-subtitle">
-                Découvrez la perle de la Méditerranée, où l'histoire millénaire rencontre 
-                la modernité dans un cadre naturel exceptionnel.
+                Plongez dans 3000 ans d'histoire, explorez des plages dorées 
+                et vivez des expériences authentiques au cœur de l'Afrique du Nord.
               </p>
-              <div className="hero-quick-stats">
-                <div className="stat-item">
-                  <span className="stat-icon">🏛️</span>
-                  <span>8 Sites UNESCO</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-icon">🏖️</span>
-                  <span>1300km de Côtes</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-icon">🌅</span>
-                  <span>3000 Ans d'Histoire</span>
-                </div>
-              </div>
               <div className="hero-actions">
-                <Link to="/destinations" className="btn btn-primary">
-                  Découvrir les Destinations
+                <Link to="/destinations" className="btn-main">
+                  Découvrir la Tunisie
                 </Link>
-                <Link to="/experiences" className="btn btn-outline">
-                  Explorer les Expériences
+                <Link to="/experiences" className="btn-secondary">
+                  Nos Expériences
                 </Link>
               </div>
             </div>
             
-            <div className="hero-visual">
-              <div className="zitouna-container float">
-                <img 
-                  src={zitounaImage} 
-                  alt="Mosquée Zitouna" 
-                  className="zitouna-image"
-                />
-                <div className="image-caption">
-                  <h4>Mosquée Zitouna</h4>
-                  <p>Cœur historique de Tunis</p>
-                </div>
-              </div>
+            <div className="hero-image">
+              <img 
+                src={tunisiaImage} 
+                alt="Panorama de Tunis" 
+                className="hero-tunisia-image"
+              />
             </div>
           </div>
         </div>
@@ -97,9 +82,9 @@ const Home: React.FC = () => {
             </Link>
             
             <Link to="/blog" className="nav-card fade-in-up">
-              <div className="card-icon blog-icon">📝</div>
-              <h3>Blog Voyage</h3>
-              <p>Conseils, guides et inspirations...</p>
+              <div className="card-icon blog-icon">�</div>
+              <h3>Transport</h3>
+              <p>Louages, trains, bus, taxis...</p>
               <span className="card-arrow">→</span>
             </Link>
             
