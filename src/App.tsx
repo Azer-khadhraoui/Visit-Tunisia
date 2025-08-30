@@ -12,7 +12,7 @@ import NaturePage from './pages/NaturePage';
 import WellnessPage from './pages/WellnessPage';
 import SportsPage from './pages/SportsPage';
 import CulturePage from './pages/CulturePage';
-import BlogPage from './pages/BlogPage';
+import TransportPage from './pages/TransportPage';
 import InfoPage from './pages/InfoPage';
 import KairouanPage from './pages/KairouanPage';
 import HammametPage from './pages/HammametPage';
@@ -48,7 +48,7 @@ function App() {
           <Route path="/experiences/bien-etre" element={<WellnessPage />} />
           <Route path="/experiences/sports-loisirs" element={<SportsPage />} />
           <Route path="/experiences/medinas-patrimoine" element={<CulturePage />} />
-          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog" element={<TransportPage />} />
           <Route path="/infos-pratiques" element={<InfoPage />} />
         </Routes>
         <Footer />

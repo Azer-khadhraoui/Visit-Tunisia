@@ -22,7 +22,7 @@ const Header: React.FC = () => {
             <li><Link to="/" className={location.pathname === '/' ? 'active' : ''}>Accueil</Link></li>
             <li><Link to="/destinations" className={location.pathname === '/destinations' ? 'active' : ''}>Destinations</Link></li>
             <li><Link to="/experiences" className={location.pathname === '/experiences' ? 'active' : ''}>Expériences</Link></li>
-            <li><Link to="/blog" className={location.pathname === '/blog' ? 'active' : ''}>Blog</Link></li>
+            <li><Link to="/blog" className={location.pathname === '/blog' ? 'active' : ''}>Transport</Link></li>
             <li><Link to="/infos-pratiques" className={location.pathname === '/infos-pratiques' ? 'active' : ''}>Infos Pratiques</Link></li>
           </ul>
         </nav>
