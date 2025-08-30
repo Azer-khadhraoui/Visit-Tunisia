@@ -18,6 +18,10 @@ import lamarsaImage from '../assets/lamarsatunis.jfif';
 // @ts-ignore
 import clockTowerImage from '../assets/clocktowertunis.jpg';
 // @ts-ignore
+import busTunisImage from '../assets/bus tunis.jpg';
+// @ts-ignore
+import taxiImage from '../assets/taxi.jpg';
+// @ts-ignore
 import goulettaImage from '../assets/lagoulettetunis.jpg';
 
 const TunisPage: React.FC = () => {
@@ -145,7 +149,9 @@ const TunisPage: React.FC = () => {
           <h2>Informations Pratiques</h2>
           <div className="info-grid">
             <div className="info-card">
-              <div className="info-icon">🚗</div>
+                <div className="info-icon">
+                  🚗
+                </div>
               <h3>Se déplacer</h3>
               <ul>
                 <li>Métro léger (TGM) vers Sidi Bou Saïd</li>
