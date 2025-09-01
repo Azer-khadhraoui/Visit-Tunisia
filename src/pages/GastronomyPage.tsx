@@ -226,7 +226,6 @@ const GastronomyPage: React.FC = () => {
                     <span>{experience.price}</span>
                   </div>
                 </div>
-                <button className="btn-book">Réserver</button>
               </div>
             ))}
           </div>

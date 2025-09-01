@@ -219,11 +219,8 @@ const Destinations: React.FC<DestinationsProps> = ({ showHeader = true }) => {
         </div>
 
         <div className="destinations-cta text-center">
-          <h3>Prêt pour l'aventure ?</h3>
-          <p>Planifiez votre voyage sur mesure avec nos experts locaux</p>
-          <a href="#contact" className="btn btn-primary">
-            Planifier mon voyage
-          </a>
+          <h3>Explorez la Tunisie</h3>
+          <p>Des milliers d'années d'histoire vous attendent dans chaque destination</p>
         </div>
       </div>
     </section>

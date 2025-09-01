@@ -233,11 +233,8 @@ const KairouanPage: React.FC = () => {
           <h2>Planifiez votre visite à Kairouan</h2>
           <p>Découvrez la richesse spirituelle et architecturale de la ville sainte</p>
           <div className="cta-buttons">
-            <Link to="/destinations" className="btn btn-outline">
+            <Link to="/destinations" className="btn btn-primary">
               Autres destinations
-            </Link>
-            <Link to="/contact" className="btn btn-primary">
-              Réserver une visite guidée
             </Link>
           </div>
         </div>

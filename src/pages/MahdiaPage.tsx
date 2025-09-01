@@ -218,8 +218,7 @@ const MahdiaPage: React.FC = () => {
             <h2>Explorez la perle du Sahel</h2>
             <p>Découvrez Mahdia, entre histoire fatimide et beautés naturelles</p>
             <div className="cta-buttons">
-              <a href="#contact" className="btn btn-primary">Réserver votre séjour</a>
-              <Link to="/destinations" className="btn btn-secondary">Autres destinations</Link>
+              <Link to="/destinations" className="btn btn-primary">Autres destinations</Link>
             </div>
           </div>
         </div>

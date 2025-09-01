@@ -252,7 +252,6 @@ const WellnessPage: React.FC = () => {
                   ))}
                 </ul>
                 <div className="package-price">{pack.price}</div>
-                <button className="btn-book-wellness">Réserver</button>
               </div>
             ))}
           </div>

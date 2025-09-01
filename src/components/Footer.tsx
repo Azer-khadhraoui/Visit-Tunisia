@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Footer.css';
+// @ts-ignore
+import flagImage from '../assets/Flag.png';
 
 const Footer: React.FC = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  const handleLinkClick = () => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  };
+
   return (
     <footer className="footer">
       <div className="container">
@@ -9,52 +24,52 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <div className="footer-brand">
               <div className="logo">
-                <span className="logo-icon">🇹🇳</span>
+                <img src={flagImage} alt="Drapeau Tunisien" className="logo-flag" style={{width: '32px', height: '24px', objectFit: 'cover'}} />
                 <span className="logo-text">Visit Tunisia</span>
               </div>
-              <p>Découvrez la magie de la Tunisie avec nos guides experts et nos expériences authentiques.</p>
+              <p>Découvrez les trésors cachés de la Tunisie : plages paradisiaques, déserts mystiques, médinas historiques et culture millénaire.</p>
               <div className="social-links">
-                <a href="#" aria-label="Facebook">📘</a>
-                <a href="#" aria-label="Instagram">📷</a>
-                <a href="#" aria-label="Twitter">🐦</a>
-                <a href="#" aria-label="YouTube">📺</a>
+                <a href="https://facebook.com/VisitTunisia" aria-label="Facebook">📘</a>
+                <a href="https://instagram.com/VisitTunisia" aria-label="Instagram">📷</a>
+                <a href="https://twitter.com/VisitTunisia" aria-label="Twitter">🐦</a>
+                <a href="https://youtube.com/VisitTunisia" aria-label="YouTube">📺</a>
               </div>
             </div>
           </div>
 
           <div className="footer-section">
-            <h4>Destinations</h4>
+            <h4>Destinations Populaires</h4>
             <ul>
-              <li><a href="#tunis">Tunis & Carthage</a></li>
-              <li><a href="#djerba">Djerba</a></li>
-              <li><a href="#sahara">Sahara</a></li>
-              <li><a href="#hammamet">Hammamet</a></li>
-              <li><a href="#kairouan">Kairouan</a></li>
-              <li><a href="#tozeur">Tozeur</a></li>
+              <li><Link to="/tunis" onClick={handleLinkClick}>Tunis & Carthage</Link></li>
+              <li><Link to="/nature" onClick={handleLinkClick}>Djerba</Link></li>
+              <li><Link to="/nature" onClick={handleLinkClick}>Désert du Sahara</Link></li>
+              <li><Link to="/sousse" onClick={handleLinkClick}>Sousse</Link></li>
+              <li><Link to="/beaches" onClick={handleLinkClick}>Hammamet</Link></li>
+              <li><Link to="/culture" onClick={handleLinkClick}>Kairouan</Link></li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h4>Expériences</h4>
+            <h4>Types d'Expériences</h4>
             <ul>
-              <li><a href="#culture">Patrimoine culturel</a></li>
-              <li><a href="#gastro">Gastronomie</a></li>
-              <li><a href="#aventure">Aventures désert</a></li>
-              <li><a href="#plages">Plages & détente</a></li>
-              <li><a href="#artisanat">Artisanat local</a></li>
-              <li><a href="#festivals">Festivals</a></li>
+              <li><Link to="/culture" onClick={handleLinkClick}>Patrimoine UNESCO</Link></li>
+              <li><Link to="/gastronomie" onClick={handleLinkClick}>Cuisine tunisienne</Link></li>
+              <li><Link to="/nature" onClick={handleLinkClick}>Aventures désert</Link></li>
+              <li><Link to="/beaches" onClick={handleLinkClick}>Plages & détente</Link></li>
+              <li><Link to="/transport" onClick={handleLinkClick}>Transport local</Link></li>
+              <li><Link to="/wellness" onClick={handleLinkClick}>Bien-être & spa</Link></li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h4>Informations</h4>
+            <h4>Informations Pratiques</h4>
             <ul>
-              <li><a href="#visa">Visa & formalités</a></li>
-              <li><a href="#transport">Se déplacer</a></li>
-              <li><a href="#hebergement">Hébergement</a></li>
-              <li><a href="#securite">Conseils sécurité</a></li>
-              <li><a href="#climat">Climat & saisons</a></li>
-              <li><a href="#budget">Budget voyage</a></li>
+              <li><Link to="/transport" onClick={handleLinkClick}>Comment se déplacer</Link></li>
+              <li><Link to="/culture" onClick={handleLinkClick}>Conseils culturels</Link></li>
+              <li><Link to="/nature" onClick={handleLinkClick}>Meilleure saison</Link></li>
+              <li><Link to="/beaches" onClick={handleLinkClick}>Activités nautiques</Link></li>
+              <li><Link to="/wellness" onClick={handleLinkClick}>Centres de bien-être</Link></li>
+              <li><Link to="/gastronomie" onClick={handleLinkClick}>Spécialités locales</Link></li>
             </ul>
           </div>
 
@@ -63,7 +78,7 @@ const Footer: React.FC = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <span className="contact-icon">📍</span>
-                <span>Office National du Tourisme Tunisien</span>
+                <span>Avenue Mohamed V, Tunis</span>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📞</span>
@@ -71,7 +86,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="contact-item">
                 <span className="contact-icon">✉️</span>
-                <span>info@visit-tunisia.tn</span>
+                <span>contact@visit-tunisia.tn</span>
               </div>
             </div>
             <div className="newsletter">
@@ -91,9 +106,9 @@ const Footer: React.FC = () => {
               <p>&copy; 2025 Visit Tunisia. Tous droits réservés.</p>
             </div>
             <div className="footer-links">
-              <a href="#privacy">Politique de confidentialité</a>
-              <a href="#terms">Conditions d'utilisation</a>
-              <a href="#cookies">Cookies</a>
+              <Link to="/privacy" onClick={handleLinkClick}>Politique de confidentialité</Link>
+              <Link to="/terms" onClick={handleLinkClick}>Conditions d'utilisation</Link>
+              <Link to="/" onClick={handleLinkClick}>Plan du site</Link>
             </div>
           </div>
         </div>

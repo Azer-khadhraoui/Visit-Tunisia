@@ -229,11 +229,8 @@ const SoussePage: React.FC = () => {
           <h2>Découvrez la perle du Sahel</h2>
           <p>Vivez l'expérience unique de Sousse entre mer et histoire</p>
           <div className="cta-buttons">
-            <Link to="/destinations" className="btn btn-outline">
+            <Link to="/destinations" className="btn btn-primary">
               Autres destinations
-            </Link>
-            <Link to="/contact" className="btn btn-primary">
-              Réserver votre séjour
             </Link>
           </div>
         </div>

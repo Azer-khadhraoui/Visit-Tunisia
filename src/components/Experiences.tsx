@@ -187,17 +187,15 @@ const Experiences: React.FC = () => {
             <div className="highlight-right">
               <div className="experience-finder">
                 <h4>Trouvez votre expérience idéale</h4>
+                <p>Découvrez la Tunisie selon vos passions</p>
                 <div className="finder-options">
-                  <button className="finder-btn active">🏖️ Plages</button>
-                  <button className="finder-btn">🕌 Culture</button>
-                  <button className="finder-btn">🐪 Aventure</button>
-                  <button className="finder-btn">🧘‍♀️ Bien-être</button>
-                  <button className="finder-btn">🍲 Gastronomie</button>
-                  <button className="finder-btn">⛳ Sports</button>
+                  <button className="finder-btn active" onClick={() => handleCategoryExplore('beach')}>🏖️ Plages</button>
+                  <button className="finder-btn" onClick={() => handleCategoryExplore('culture')}>🕌 Culture</button>
+                  <button className="finder-btn" onClick={() => handleCategoryExplore('desert')}>🐪 Aventure</button>
+                  <button className="finder-btn" onClick={() => handleCategoryExplore('wellness')}>🧘‍♀️ Bien-être</button>
+                  <button className="finder-btn" onClick={() => handleCategoryExplore('gastronomy')}>🍲 Gastronomie</button>
+                  <button className="finder-btn" onClick={() => handleCategoryExplore('sports')}>⛳ Sports</button>
                 </div>
-                <button className="btn btn-primary">
-                  Planifier mon voyage
-                </button>
               </div>
             </div>
           </div>

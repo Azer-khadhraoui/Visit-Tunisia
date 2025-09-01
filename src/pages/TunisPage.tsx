@@ -240,10 +240,9 @@ const TunisPage: React.FC = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Explorez la capitale historique</h2>
-            <p>Découvrez Tunis et Carthage avec nos guides experts locaux</p>
+            <p>Découvrez Tunis et Carthage, berceaux de civilisations millénaires</p>
             <div className="cta-buttons">
-              <a href="#contact" className="btn btn-primary">Réserver une visite</a>
-              <Link to="/destinations" className="btn btn-secondary">Autres destinations</Link>
+              <Link to="/destinations" className="btn btn-primary">Autres destinations</Link>
             </div>
           </div>
         </div>

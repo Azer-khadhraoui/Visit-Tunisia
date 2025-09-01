@@ -228,11 +228,8 @@ const HammametPage: React.FC = () => {
           <h2>Planifiez votre séjour à Hammamet</h2>
           <p>Découvrez la magie de la perle du golfe de Tunis</p>
           <div className="cta-buttons">
-            <Link to="/destinations" className="btn btn-outline">
+            <Link to="/destinations" className="btn btn-primary">
               Autres destinations
-            </Link>
-            <Link to="/contact" className="btn btn-primary">
-              Réserver un séjour
             </Link>
           </div>
         </div>

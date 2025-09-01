@@ -229,11 +229,8 @@ const SaharaPage: React.FC = () => {
           <h2>Partez à l'aventure dans le Sahara</h2>
           <p>Vivez une expérience unique dans le plus grand désert du monde</p>
           <div className="cta-buttons">
-            <Link to="/destinations" className="btn btn-outline">
+            <Link to="/destinations" className="btn btn-primary">
               Autres destinations
-            </Link>
-            <Link to="/contact" className="btn btn-primary">
-              Réserver une excursion
             </Link>
           </div>
         </div>

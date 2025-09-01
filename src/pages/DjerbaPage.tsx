@@ -229,11 +229,8 @@ const DjerbaPage: React.FC = () => {
           <h2>Vivez la magie de Djerba</h2>
           <p>Découvrez l'île des rêves et ses merveilles infinies</p>
           <div className="cta-buttons">
-            <Link to="/destinations" className="btn btn-outline">
+            <Link to="/destinations" className="btn btn-primary">
               Autres destinations
-            </Link>
-            <Link to="/contact" className="btn btn-primary">
-              Réserver votre séjour
             </Link>
           </div>
         </div>
