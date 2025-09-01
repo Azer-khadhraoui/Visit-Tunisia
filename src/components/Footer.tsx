@@ -40,36 +40,36 @@ const Footer: React.FC = () => {
           <div className="footer-section">
             <h4>Destinations Populaires</h4>
             <ul>
-              <li><Link to="/tunis" onClick={handleLinkClick}>Tunis & Carthage</Link></li>
-              <li><Link to="/nature" onClick={handleLinkClick}>Djerba</Link></li>
-              <li><Link to="/nature" onClick={handleLinkClick}>Désert du Sahara</Link></li>
-              <li><Link to="/sousse" onClick={handleLinkClick}>Sousse</Link></li>
-              <li><Link to="/beaches" onClick={handleLinkClick}>Hammamet</Link></li>
-              <li><Link to="/culture" onClick={handleLinkClick}>Kairouan</Link></li>
+              <li><Link to="/destinations/tunis" onClick={handleLinkClick}>Tunis & Carthage</Link></li>
+              <li><Link to="/destinations/djerba" onClick={handleLinkClick}>Djerba</Link></li>
+              <li><Link to="/destinations/sahara" onClick={handleLinkClick}>Désert du Sahara</Link></li>
+              <li><Link to="/destinations/sousse" onClick={handleLinkClick}>Sousse</Link></li>
+              <li><Link to="/destinations/hammamet" onClick={handleLinkClick}>Hammamet</Link></li>
+              <li><Link to="/destinations/kairouan" onClick={handleLinkClick}>Kairouan</Link></li>
             </ul>
           </div>
 
           <div className="footer-section">
             <h4>Types d'Expériences</h4>
             <ul>
-              <li><Link to="/culture" onClick={handleLinkClick}>Patrimoine UNESCO</Link></li>
-              <li><Link to="/gastronomie" onClick={handleLinkClick}>Cuisine tunisienne</Link></li>
-              <li><Link to="/nature" onClick={handleLinkClick}>Aventures désert</Link></li>
-              <li><Link to="/beaches" onClick={handleLinkClick}>Plages & détente</Link></li>
-              <li><Link to="/transport" onClick={handleLinkClick}>Transport local</Link></li>
-              <li><Link to="/wellness" onClick={handleLinkClick}>Bien-être & spa</Link></li>
+              <li><Link to="/experiences/medinas-patrimoine" onClick={handleLinkClick}>Patrimoine UNESCO</Link></li>
+              <li><Link to="/experiences/gastronomie" onClick={handleLinkClick}>Cuisine tunisienne</Link></li>
+              <li><Link to="/experiences/nature-decouverte" onClick={handleLinkClick}>Aventures désert</Link></li>
+              <li><Link to="/experiences/plages-cotes" onClick={handleLinkClick}>Plages & détente</Link></li>
+              <li><Link to="/blog" onClick={handleLinkClick}>Transport local</Link></li>
+              <li><Link to="/experiences/bien-etre" onClick={handleLinkClick}>Bien-être & spa</Link></li>
             </ul>
           </div>
 
           <div className="footer-section">
-            <h4>Informations Pratiques</h4>
+            <h4>Guide Pratique</h4>
             <ul>
-              <li><Link to="/transport" onClick={handleLinkClick}>Comment se déplacer</Link></li>
-              <li><Link to="/culture" onClick={handleLinkClick}>Conseils culturels</Link></li>
-              <li><Link to="/nature" onClick={handleLinkClick}>Meilleure saison</Link></li>
-              <li><Link to="/beaches" onClick={handleLinkClick}>Activités nautiques</Link></li>
-              <li><Link to="/wellness" onClick={handleLinkClick}>Centres de bien-être</Link></li>
-              <li><Link to="/gastronomie" onClick={handleLinkClick}>Spécialités locales</Link></li>
+              <li><Link to="/blog" onClick={handleLinkClick}>Transports en Tunisie</Link></li>
+              <li><Link to="/infos-pratiques" onClick={handleLinkClick}>Informations utiles</Link></li>
+              <li><Link to="/destinations" onClick={handleLinkClick}>Toutes les destinations</Link></li>
+              <li><Link to="/experiences" onClick={handleLinkClick}>Types d'expériences</Link></li>
+              <li><Link to="/experiences/medinas-patrimoine" onClick={handleLinkClick}>Patrimoine & culture</Link></li>
+              <li><Link to="/" onClick={handleLinkClick}>Accueil</Link></li>
             </ul>
           </div>
 

@@ -150,7 +150,7 @@ const TunisPage: React.FC = () => {
           <div className="info-grid">
             <div className="info-card">
                 <div className="info-icon">
-                  🚗
+                  �
                 </div>
               <h3>Se déplacer</h3>
               <ul>

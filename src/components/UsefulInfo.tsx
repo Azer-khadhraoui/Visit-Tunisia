@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './UsefulInfo.css';
 
 const UsefulInfo: React.FC = () => {
@@ -169,17 +170,17 @@ const UsefulInfo: React.FC = () => {
             <div className="tips-right">
               <div className="download-guides">
                 <h4>Guides Pratiques</h4>
-                <p>Téléchargez nos guides pour un voyage réussi</p>
+                <p>Explorez nos différentes sections pour planifier votre voyage</p>
                 <div className="guide-buttons">
-                  <button className="guide-btn">
-                    📱 Guide Mobile
-                  </button>
-                  <button className="guide-btn">
-                    🗺️ Cartes Offline
-                  </button>
-                  <button className="guide-btn">
-                    📖 Guide PDF
-                  </button>
+                  <Link to="/blog" className="guide-btn">
+                    � Guide Transport
+                  </Link>
+                  <Link to="/destinations" className="guide-btn">
+                    🗺️ Toutes Destinations
+                  </Link>
+                  <Link to="/experiences" className="guide-btn">
+                    🎯 Types d'Expériences
+                  </Link>
                 </div>
               </div>
             </div>
