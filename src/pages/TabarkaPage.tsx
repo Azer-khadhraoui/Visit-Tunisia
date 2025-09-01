@@ -70,39 +70,18 @@ const TabarkaPage: React.FC = () => {
   return (
     <div className="tabarka-page">
       {/* Hero Section */}
-      <section className="tabarka-hero">
-        <div className="hero-background">
-          <img src={fortImage} alt="Fort Génois de Tabarka" className="hero-bg-img" />
-          <div className="hero-overlay"></div>
-        </div>
+      <div className="page-header">
         <div className="container">
-          <div className="hero-content">
-            <div className="breadcrumb">
-              <Link to="/">Accueil</Link>
-              <span> / </span>
-              <Link to="/destinations">Destinations</Link>
-              <span> / </span>
-              <span>Tabarka</span>
-            </div>
-            <h1>Tabarka</h1>
-            <p className="hero-subtitle">Perle du Nord-Ouest Tunisien</p>
-            <div className="hero-stats">
-              <div className="stat">
-                <span className="stat-number">170km</span>
-                <span className="stat-label">de Tunis</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">16°C</span>
-                <span className="stat-label">Temp. hivernale</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">1588</span>
-                <span className="stat-label">Fort génois</span>
-              </div>
+          <div className="tabarka-title-container">
+            <img src={flagImage} alt="Drapeau Tunisien" className="title-flag-bg" />
+            <img src={fortImage} alt="Fort Génois de Tabarka" className="title-hero-img" />
+            <div className="title-overlay">
+              <h1>Tabarka</h1>
+              <p>Perle du Nord-Ouest Tunisien</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Introduction */}
       <section className="tabarka-intro section-padding">

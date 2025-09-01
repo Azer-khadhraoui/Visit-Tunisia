@@ -70,39 +70,18 @@ const HammametPage: React.FC = () => {
   return (
     <div className="hammamet-page">
       {/* Hero Section */}
-      <section className="hammamet-hero">
-        <div className="hero-background">
-          <img src={beachImage} alt="Plages de Hammamet" className="hero-bg-img" />
-          <div className="hero-overlay"></div>
-        </div>
+      <div className="page-header">
         <div className="container">
-          <div className="hero-content">
-            <div className="breadcrumb">
-              <Link to="/">Accueil</Link>
-              <span> / </span>
-              <Link to="/destinations">Destinations</Link>
-              <span> / </span>
-              <span>Hammamet</span>
-            </div>
-            <h1>Hammamet</h1>
-            <p className="hero-subtitle">Perle du Golfe de Tunis</p>
-            <div className="hero-stats">
-              <div className="stat">
-                <span className="stat-number">60km</span>
-                <span className="stat-label">de Tunis</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">14km</span>
-                <span className="stat-label">de plages</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">1963</span>
-                <span className="stat-label">Premier resort</span>
-              </div>
+          <div className="hammamet-title-container">
+            <img src={flagImage} alt="Drapeau Tunisien" className="title-flag-bg" />
+            <img src={beachImage} alt="Plages de Hammamet" className="title-hero-img" />
+            <div className="title-overlay">
+              <h1>Hammamet</h1>
+              <p>Perle du Golfe de Tunis</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Introduction */}
       <section className="hammamet-intro section-padding">

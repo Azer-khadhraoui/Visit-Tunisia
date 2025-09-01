@@ -1,5 +1,139 @@
 .tunis-page {
-  min-height: 100vh;
+  padding-top: 80px;
+  background: white;
+}
+
+/* New Experiences-style Header */
+.page-header {
+  padding: 60px 0;
+  text-align: center;
+  background: white;
+  position: relative;
+}
+
+.tunis-title-container {
+  position: relative;
+  padding: 60px 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../assets/tunis.webp');
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #C41E3A;
+  box-shadow: 0 15px 35px rgba(196, 30, 58, 0.15);
+}
+
+.tunis-title-container::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 60px;
+  height: 40px;
+  background-image: url('../assets/Flag.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.tunis-title-container::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 60px;
+  height: 40px;
+  background-image: url('../assets/Flag.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.title-flag-bg {
+  display: none;
+}
+
+.title-hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 17px;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.title-overlay {
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+/* Breadcrumb styles */
+.breadcrumb {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #C41E3A;
+  text-decoration: none;
+}
+
+.separator {
+  margin: 0 10px;
+  color: #999;
+}
+
+/* Hero stats */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #C41E3A;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  color: #C41E3A;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 20px;
+  color: #666;
+  font-weight: 500;
 }
 
 /* Hero Section */

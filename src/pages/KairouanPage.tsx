@@ -70,39 +70,18 @@ const KairouanPage: React.FC = () => {
   return (
     <div className="kairouan-page">
       {/* Hero Section */}
-      <section className="kairouan-hero">
-        <div className="hero-background">
-          <img src={okbaImage} alt="Grande Mosquée de Kairouan" className="hero-bg-img" />
-          <div className="hero-overlay"></div>
-        </div>
+      <div className="page-header">
         <div className="container">
-          <div className="hero-content">
-            <div className="breadcrumb">
-              <Link to="/destinations">Destinations</Link>
-              <span> › </span>
-              <span>Kairouan</span>
-            </div>
-            <h1>Kairouan</h1>
-            <p className="hero-subtitle">
-              Ville sainte et première capitale de l'Ifriqiya, berceau de la civilisation islamique au Maghreb
-            </p>
-            <div className="hero-stats">
-              <div className="stat">
-                <span className="stat-number">1350</span>
-                <span className="stat-label">Ans d'histoire</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">4</span>
-                <span className="stat-label">Sites majeurs</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">1988</span>
-                <span className="stat-label">Classement UNESCO</span>
-              </div>
+          <div className="kairouan-title-container">
+            <img src={flagImage} alt="Drapeau Tunisien" className="title-flag-bg" />
+            <img src={okbaImage} alt="Grande Mosquée de Kairouan" className="title-hero-img" />
+            <div className="title-overlay">
+              <h1>Kairouan</h1>
+              <p>Ville sainte et première capitale de l'Ifriqiya</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Introduction */}
       <section className="kairouan-intro section-padding">

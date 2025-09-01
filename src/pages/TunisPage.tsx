@@ -4,6 +4,8 @@ import './TunisPage.css';
 // @ts-ignore
 import heroImage from '../assets/tunis.webp';
 // @ts-ignore
+import flagImage from '../assets/Flag.png';
+// @ts-ignore
 import medinaImage from '../assets/medinatunis.jpg';
 // @ts-ignore
 import bardoImage from '../assets/museebardotunis.jpg';
@@ -79,35 +81,17 @@ const TunisPage: React.FC = () => {
   return (
     <div className="tunis-page">
       {/* Hero Section */}
-      <section className="tunis-hero">
-        <div className="hero-background">
-          <img src={heroImage} alt="Tunis - Capitale de la Tunisie" className="hero-bg-img" />
-        </div>
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <nav className="breadcrumb">
-            <Link to="/destinations">Destinations</Link>
-            <span className="separator">›</span>
-            <span>Tunis</span>
-          </nav>
-          <h1>Tunis & Carthage</h1>
-          <p>Découvrez la capitale tunisienne et les vestiges de l'antique Carthage, entre histoire millénaire et modernité méditerranéenne</p>
-          <div className="hero-stats">
-            <div className="stat">
-              <span className="stat-number">2000+</span>
-              <span className="stat-label">ans d'histoire</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">8</span>
-              <span className="stat-label">sites majeurs</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">3</span>
-              <span className="stat-label">sites UNESCO</span>
+      <div className="page-header">
+        <div className="container">
+          <div className="tunis-title-container">
+            <img src={flagImage} alt="Drapeau Tunisien" className="title-flag-bg" />
+            <div className="title-overlay">
+              <h1>Tunis</h1>
+              <p>Capitale historique et culturelle de la Tunisie, mélange parfait entre tradition et modernité</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Attractions Section */}
       <section className="attractions-section">

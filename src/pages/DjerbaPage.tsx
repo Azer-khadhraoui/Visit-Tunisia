@@ -72,39 +72,18 @@ const DjerbaPage: React.FC = () => {
   return (
     <div className="djerba-page">
       {/* Hero Section */}
-      <section className="djerba-hero">
-        <div className="hero-background">
-          <img src={djerbaImage} alt="Île de Djerba" className="hero-bg-img" />
-          <div className="hero-overlay"></div>
-        </div>
+      <div className="page-header">
         <div className="container">
-          <div className="hero-content">
-            <div className="breadcrumb">
-              <Link to="/">Accueil</Link>
-              <span> / </span>
-              <Link to="/destinations">Destinations</Link>
-              <span> / </span>
-              <span>Djerba</span>
-            </div>
-            <h1>Djerba</h1>
-            <p className="hero-subtitle">L'Île des Rêves</p>
-            <div className="hero-stats">
-              <div className="stat">
-                <span className="stat-number">514km²</span>
-                <span className="stat-label">Superficie</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">14km</span>
-                <span className="stat-label">de plages</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">3000</span>
-                <span className="stat-label">ans d'histoire</span>
-              </div>
+          <div className="djerba-title-container">
+            <img src={flagImage} alt="Drapeau Tunisien" className="title-flag-bg" />
+            <img src={djerbaImage} alt="Île de Djerba" className="title-hero-img" />
+            <div className="title-overlay">
+              <h1>Djerba</h1>
+              <p>L'Île des Rêves - Paradis méditerranéen</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Introduction */}
       <section className="djerba-intro section-padding">

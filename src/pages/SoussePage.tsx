@@ -72,39 +72,21 @@ const SoussePage: React.FC = () => {
   return (
     <div className="sousse-page">
       {/* Hero Section */}
-      <section className="sousse-hero">
-        <div className="hero-background">
-          <img src={sousseImage} alt="Ville de Sousse" className="hero-bg-img" />
-          <div className="hero-overlay"></div>
-        </div>
+      <div className="page-header">
         <div className="container">
-          <div className="hero-content">
-            <div className="breadcrumb">
-              <Link to="/">Accueil</Link>
-              <span> / </span>
-              <Link to="/destinations">Destinations</Link>
-              <span> / </span>
-              <span>Sousse</span>
-            </div>
-            <h1>Sousse</h1>
-            <p className="hero-subtitle">Perle du Sahel Tunisien</p>
-            <div className="hero-stats">
-              <div className="stat">
-                <span className="stat-number">140km</span>
-                <span className="stat-label">de Tunis</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">1200</span>
-                <span className="stat-label">ans d'histoire</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">20km</span>
-                <span className="stat-label">de plages</span>
-              </div>
+          <div className="sousse-title-container" style={{
+            backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(${cornichImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}>
+            <img src={flagImage} alt="Drapeau Tunisien" className="title-flag-bg" />
+            <div className="title-overlay">
+              <h1>Sousse</h1>
+              <p>Perle du Sahel tunisien, station balnéaire alliant patrimoine historique et plaisirs modernes</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Introduction */}
       <section className="sousse-intro section-padding">

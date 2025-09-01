@@ -13,6 +13,7 @@ import skifaImage from '../assets/skifakahlamahdia.jpg';
 import ruinesImage from '../assets/ruindoormahdia.jpg';
 // @ts-ignore
 import plageMahdiaImage from '../assets/plagemahdia.jpg';
+import flagImage from '../assets/Flag.png';
 
 const MahdiaPage: React.FC = () => {
   const attractions = [
@@ -57,35 +58,18 @@ const MahdiaPage: React.FC = () => {
   return (
     <div className="mahdia-page">
       {/* Hero Section */}
-      <section className="mahdia-hero">
-        <div className="hero-background">
-          <img src={heroImage} alt="Amphithéâtre de Mahdia" className="hero-bg-img" />
-        </div>
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <nav className="breadcrumb">
-            <Link to="/destinations">Destinations</Link>
-            <span className="separator">›</span>
-            <span>Mahdia</span>
-          </nav>
-          <h1>Mahdia</h1>
-          <p>Découvrez la perle du Sahel tunisien, berceau de la dynastie fatimide, entre patrimoine historique exceptionnel et plages paradisiaques</p>
-          <div className="hero-stats">
-            <div className="stat">
-              <span className="stat-number">1000+</span>
-              <span className="stat-label">ans d'histoire</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">6</span>
-              <span className="stat-label">sites historiques</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">25</span>
-              <span className="stat-label">km de côtes</span>
+      <div className="page-header">
+        <div className="container">
+          <div className="mahdia-title-container">
+            <img src={flagImage} alt="Drapeau Tunisien" className="title-flag-bg" />
+            <img src={heroImage} alt="Amphithéâtre de Mahdia" className="title-hero-img" />
+            <div className="title-overlay">
+              <h1>Mahdia</h1>
+              <p>Perle du Sahel tunisien, berceau de la dynastie fatimide</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Attractions Section */}
       <section className="attractions-section">

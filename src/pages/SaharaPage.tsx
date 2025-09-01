@@ -71,39 +71,18 @@ const SaharaPage: React.FC = () => {
   return (
     <div className="sahara-page">
       {/* Hero Section */}
-      <section className="sahara-hero">
-        <div className="hero-background">
-          <img src={saharaImage} alt="Désert du Sahara" className="hero-bg-img" />
-          <div className="hero-overlay"></div>
-        </div>
+      <div className="page-header">
         <div className="container">
-          <div className="hero-content">
-            <div className="breadcrumb">
-              <Link to="/">Accueil</Link>
-              <span> / </span>
-              <Link to="/destinations">Destinations</Link>
-              <span> / </span>
-              <span>Sahara</span>
-            </div>
-            <h1>Sahara</h1>
-            <p className="hero-subtitle">Le Grand Désert Mystique</p>
-            <div className="hero-stats">
-              <div className="stat">
-                <span className="stat-number">9M</span>
-                <span className="stat-label">km² au total</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">200m</span>
-                <span className="stat-label">Hauteur des dunes</span>
-              </div>
-              <div className="stat">
-                <span className="stat-number">-20°C</span>
-                <span className="stat-label">Variation nocturne</span>
-              </div>
+          <div className="sahara-title-container">
+            <img src={flagImage} alt="Drapeau Tunisien" className="title-flag-bg" />
+            <img src={saharaImage} alt="Désert du Sahara" className="title-hero-img" />
+            <div className="title-overlay">
+              <h1>Sahara</h1>
+              <p>Le Grand Désert Mystique</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Introduction */}
       <section className="sahara-intro section-padding">

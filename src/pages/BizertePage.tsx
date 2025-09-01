@@ -11,6 +11,7 @@ import forteEspagneImage from '../assets/bridgebizerte.jpg';
 import lacImage from '../assets/coucoubeachbizerte.webp';
 // @ts-ignore
 import corniImage from '../assets/bizertemedina.jpg';
+import flagImage from '../assets/Flag.png';
 
 const BizertePage: React.FC = () => {
   const attractions = [
@@ -43,35 +44,18 @@ const BizertePage: React.FC = () => {
   return (
     <div className="bizerte-page">
       {/* Hero Section */}
-      <section className="bizerte-hero">
-        <div className="hero-background">
-          <img src={heroImage} alt="Bizerte - Perle du Nord" className="hero-bg-img" />
-        </div>
-        <div className="hero-overlay"></div>
-        <div className="hero-content">
-          <nav className="breadcrumb">
-            <Link to="/destinations">Destinations</Link>
-            <span className="separator">›</span>
-            <span>Bizerte</span>
-          </nav>
-          <h1>Bizerte</h1>
-          <p>Découvrez la perle du nord tunisien, entre lac paisible et Méditerranée azur, où l'histoire maritime se mêle à la beauté naturelle</p>
-          <div className="hero-stats">
-            <div className="stat">
-              <span className="stat-number">2500+</span>
-              <span className="stat-label">ans d'histoire</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">1</span>
-              <span className="stat-label">pont mobile historique</span>
-            </div>
-            <div className="stat">
-              <span className="stat-number">12</span>
-              <span className="stat-label">km de côtes</span>
+      <div className="page-header">
+        <div className="container">
+          <div className="bizerte-title-container">
+            <img src={flagImage} alt="Drapeau Tunisien" className="title-flag-bg" />
+            <img src={heroImage} alt="Bizerte - Perle du Nord" className="title-hero-img" />
+            <div className="title-overlay">
+              <h1>Bizerte</h1>
+              <p>Perle du nord tunisien</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Attractions Section */}
       <section className="attractions-section">
