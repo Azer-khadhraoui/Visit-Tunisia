@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { LanguageProvider } from './contexts/LanguageContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
@@ -27,11 +28,12 @@ import SoussePage from './pages/SoussePage';
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="App">
-        <Header />
-        <Routes>
+    <LanguageProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="App">
+          <Header />
+          <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/destinations" element={<DestinationsPage />} />
           <Route path="/destinations/kairouan" element={<KairouanPage />} />
@@ -56,6 +58,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </LanguageProvider>
   );
 }
 

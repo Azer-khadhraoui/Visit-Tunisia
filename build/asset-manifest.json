@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Visit-Tunisia/static/css/main.493efefc.css",
-    "main.js": "/Visit-Tunisia/static/js/main.11829558.js",
+    "main.css": "/Visit-Tunisia/static/css/main.2f890448.css",
+    "main.js": "/Visit-Tunisia/static/js/main.47dfd838.js",
     "static/media/Lets Discover Tunisia  🇹🇳.mp4": "/Visit-Tunisia/static/media/Lets Discover Tunisia  🇹🇳.8a64bab0fc73abab4501.mp4",
     "static/media/carthage.jpg": "/Visit-Tunisia/static/media/carthage.dd17fff32cb5407189b4.jpg",
     "static/media/hammametplage.webp": "/Visit-Tunisia/static/media/hammametplage.e79c9aa59cd410c8e8d3.webp",
@@ -79,11 +79,11 @@
     "static/media/lamarsatunis.jfif": "/Visit-Tunisia/static/media/lamarsatunis.6184efe9bc6d1e44d974.jfif",
     "static/media/Brik à l'œuf.jfif": "/Visit-Tunisia/static/media/Brik à l'œuf.2b6a70187fa1ac2683af.jfif",
     "index.html": "/Visit-Tunisia/index.html",
-    "main.493efefc.css.map": "/Visit-Tunisia/static/css/main.493efefc.css.map",
-    "main.11829558.js.map": "/Visit-Tunisia/static/js/main.11829558.js.map"
+    "main.2f890448.css.map": "/Visit-Tunisia/static/css/main.2f890448.css.map",
+    "main.47dfd838.js.map": "/Visit-Tunisia/static/js/main.47dfd838.js.map"
   },
   "entrypoints": [
-    "static/css/main.493efefc.css",
-    "static/js/main.11829558.js"
+    "static/css/main.2f890448.css",
+    "static/js/main.47dfd838.js"
   ]
 }
