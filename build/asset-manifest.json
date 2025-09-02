@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Visit-Tunisia/static/css/main.2f890448.css",
-    "main.js": "/Visit-Tunisia/static/js/main.47dfd838.js",
+    "main.js": "/Visit-Tunisia/static/js/main.4a9dfaea.js",
     "static/media/Lets Discover Tunisia  🇹🇳.mp4": "/Visit-Tunisia/static/media/Lets Discover Tunisia  🇹🇳.8a64bab0fc73abab4501.mp4",
     "static/media/carthage.jpg": "/Visit-Tunisia/static/media/carthage.dd17fff32cb5407189b4.jpg",
     "static/media/hammametplage.webp": "/Visit-Tunisia/static/media/hammametplage.e79c9aa59cd410c8e8d3.webp",
@@ -80,10 +80,10 @@
     "static/media/Brik à l'œuf.jfif": "/Visit-Tunisia/static/media/Brik à l'œuf.2b6a70187fa1ac2683af.jfif",
     "index.html": "/Visit-Tunisia/index.html",
     "main.2f890448.css.map": "/Visit-Tunisia/static/css/main.2f890448.css.map",
-    "main.47dfd838.js.map": "/Visit-Tunisia/static/js/main.47dfd838.js.map"
+    "main.4a9dfaea.js.map": "/Visit-Tunisia/static/js/main.4a9dfaea.js.map"
   },
   "entrypoints": [
     "static/css/main.2f890448.css",
-    "static/js/main.47dfd838.js"
+    "static/js/main.4a9dfaea.js"
   ]
 }
